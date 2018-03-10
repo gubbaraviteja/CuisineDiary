@@ -1,0 +1,82 @@
+html {
+    font-family: Comic Sans Ms, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    cursor: auto;
+  }
+
+header {
+    background-color: lightgrey;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+
+header #headerText {
+    color: black;
+    font-size: 40px;
+    text-shadow: 1px 1px darkgray;
+    /* below 3 properties are used to display text in center of header */
+    text-align: center;
+    padding: 15px;
+}
+
+.nav.flex-container {
+    flex-direction: column;
+    width: 15%;
+}
+
+.navElement {
+    background-color: lightgrey;
+    margin-bottom: 5;
+}
+
+#cuisine {
+    /* width: 100%; */
+    margin: 0 auto;
+    background-color: lightgrey;
+    height: 400px;
+    color: black;
+    border-color: black;
+}
+
+ul {
+    list-style-type: none;
+    /* columns: 2; */
+}
+
+.reset-a:hover{
+    color: white;
+}
+
+#cuisine table {
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+th {
+    vertical-align: top;
+    text-align: right;
+}
+
+/* for layout */
+.flex-container {
+    display: flex;
+}
+
+.flex-container .nav {
+    flex-grow: 0;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.flex-container .nav ul{
+    padding: 10px;
+}
+
+.flex-container #cuisine{
+    flex-grow: 1
+}
