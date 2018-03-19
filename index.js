@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.static(__dirname+'/css'));
 app.use(express.static(__dirname+'/templates'));
+app.use(express.static(__dirname+'/assets'));
 
 app.set('port', process.env.PORT || 3000);
 

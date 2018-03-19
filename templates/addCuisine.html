@@ -17,17 +17,28 @@
     <div class="flex-container">
     <nav class="nav flex-container">
             <div class="navElement"><a href="index.html" class="reset-a">HOME</a></div>
-            <div class="navElement"><a href="addCuisine.html" class="reset-a">ADD Cuisine</a></div>
+            <div class="navElement"><a href="index.html" class="reset-a">ADD Cuisine</a></div>
             <div class="navElement"><a href="index.html" class="reset-a">Guess Cuisine</a></div>
             <div class="navElement"><a href="index.html" class="reset-a">Contact Us</a></div>
     </nav>
     <div id="cuisine">
-        <ul>
-            <a href="cuisine.html" class="reset-a"><li>Panjabi daal curry</li></a>
-            <a href="cuisine.html" class="reset-a"><li>Egg biriyani</li></a>
-            <a href="cuisine.html" class="reset-a"><li>Masala bread</li></a>
-            <a href="cuisine.html" class="reset-a"><li>Tomato rice</li></a>
-        </ul>
+        <form action="/cuisine/add" method="POST">
+            <div>
+                <label for="cuisine_name">Name</label>
+                <input id="cuisine_name" type="text" name="cuisine_name">
+            </div>
+            <div>
+                <label for="cuisine_notes">Notes</label>
+                <textarea name="cuisine_notes" id="cuisine_notes" rows="3" cols="50">Personalized notes on preparing the cuisine</textarea>
+            </div>
+            <div>
+                <label for="cuisine_tips">Tips</label>
+                <textarea id="cuisine_tips" name="cuisine_tips"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Add Cuisine to the Diary</button>
+            </div>
+        </form>
     </div>
 </div>
 </body>
