@@ -1,9 +1,11 @@
-const express = require('express');
+import express from 'express';
+import path from 'path';
+
 const app = express();
-app.use(express.static(__dirname+'/css'));
-app.use(express.static(__dirname+'/templates'));
-app.use(express.static(__dirname+'/assets'));
-app.use(express.static(__dirname+'/'));
+app.use(express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'templates')));
+app.use(express.static(path.join(__dirname, 'assets')));
+app.use(express.static(path.join(__dirname, '/')));
 
 app.set('port', process.env.PORT || 3000);
 
@@ -16,5 +18,5 @@ app.get('/cuisines/', (req, res) => {
 });
 
 app.listen(app.get('port'), () => {
-    console.log("Express app started on localhost:",app.get('port'));
+    console.log('Express app started on localhost:', app.get('port'));
 });

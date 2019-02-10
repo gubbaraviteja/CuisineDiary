@@ -1,6 +1,6 @@
 # CuisineDiary
 
-CuisineDiary is a web application built using node.js to store all the favoute cuisines of users and suggest a cuisine daily based on the past experience
+CuisineDiary is a web application built using node.js to store all the favorite cuisines of users and suggest a cuisine daily based on the past experience
 
 ## Documentation
 
