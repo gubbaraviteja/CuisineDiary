@@ -3,7 +3,7 @@ html {
 }
 
 body{
-    background: url('backgroundImage.jpg') no-repeat center center fixed;
+    background: url('../assets/backgroundImage.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .reset-a, .reset-a:hover, .reset-a:visited, .reset-a:focus, .reset-a:active  {
@@ -37,7 +37,7 @@ header #headerText {
 
 .navElement {
     background-color: lightgrey;
-    margin-bottom: 5;
+    margin-bottom: 5px;
     border-radius: 25px;
     opacity: 0.5;
 }
